@@ -8,7 +8,8 @@
 @font-face {
   font-family: Raleway;
   font-display: swap;
-  src: url("../fonts/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway-Bold.woff") format("woff");
+  src: url("../fonts/Raleway-Bold.woff2") format("woff2"),
+    url("../fonts/Raleway-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -16,7 +17,8 @@
 @font-face {
   font-family: Raleway;
   font-display: swap;
-  src: url("../fonts/Raleway-Black.woff2") format("woff2"), url("../fonts/Raleway-Black.woff") format("woff");
+  src: url("../fonts/Raleway-Black.woff2") format("woff2"),
+    url("../fonts/Raleway-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
 }
@@ -24,7 +26,8 @@
 @font-face {
   font-family: Raleway;
   font-display: swap;
-  src: url("../fonts/Raleway-Regular.woff2") format("woff2"), url("../fonts/Raleway-Regular.woff") format("woff");
+  src: url("../fonts/Raleway-Regular.woff2") format("woff2"),
+    url("../fonts/Raleway-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -32,7 +35,8 @@
 @font-face {
   font-family: Raleway;
   font-display: swap;
-  src: url("../fonts/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway-Medium.woff") format("woff");
+  src: url("../fonts/Raleway-Medium.woff2") format("woff2"),
+    url("../fonts/Raleway-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
@@ -139,7 +143,7 @@ ol {
 
 img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 button,
@@ -191,7 +195,7 @@ picture img {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -326,8 +330,9 @@ picture img {
   z-index: 2;
 }
 
-.no-webp .hero::before{
-  background-image: url("../img/wheel.png"); }
+.no-webp .hero::before {
+  background-image: url("../img/wheel.png");
+}
 
 .hero::before {
   position: absolute;
@@ -337,6 +342,7 @@ picture img {
   content: "";
   width: calc(208px + 428 * ((100vw - 320px) / 1600));
   height: 100%;
+  background-image: url("../img/wheel.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -388,7 +394,12 @@ picture img {
 .about {
   color: #fff;
   padding-top: calc(20px + 72 * ((100vw - 320px) / 1600));
-  background-image: linear-gradient(#222 0%, #222 50%, transparent 50%, transparent 100%);
+  background-image: linear-gradient(
+    #222 0%,
+    #222 50%,
+    transparent 50%,
+    transparent 100%
+  );
 }
 
 .about__bg {
@@ -538,7 +549,8 @@ picture img {
 
 .form__month-btn--active {
   color: #d10014;
-  text-shadow: 0 0 1px currentColor, 0 0 1px currentColor, 0 0 0.7px currentColor;
+  text-shadow: 0 0 1px currentColor, 0 0 1px currentColor,
+    0 0 0.7px currentColor;
 }
 
 .form__time {
@@ -627,7 +639,7 @@ picture img {
 .form-reservation__moment {
   display: flex;
   -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
+  column-gap: 0.5rem;
   font-family: Arial, sans-serif;
   font-weight: 400;
 }
@@ -635,8 +647,8 @@ picture img {
 .radio__input {
   position: absolute;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .radio__input:checked + .radio__label {
@@ -1113,4 +1125,6 @@ picture img {
   }
 }
 
-.webp .hero::before{ background-image: url(../img/wheel.webp); }
+.webp .hero::before {
+  background-image: url(../img/wheel.webp);
+}
